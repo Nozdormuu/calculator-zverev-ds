@@ -1,0 +1,8 @@
+*.o
+*.exe
+*.out
+build/
+googletest/
+venv/
+__*__
+.pytest_cache
