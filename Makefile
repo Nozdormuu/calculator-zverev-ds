@@ -96,5 +96,5 @@ $(VENV):
 	@$(PIP) list | grep -q pytest || $(PIP) install pytest
 
 run-integration-tests: $(VENV) $(APP_EXE)
-	@. venv/bin/activate
+	@$(VENV)/bin/pytest
 	@pytest $(INT_TESTS)
